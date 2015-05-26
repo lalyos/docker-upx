@@ -1,6 +1,6 @@
 FROM lalyos/scratch-chmx
 
-ADD release/upx /bin/upx
+ADD https://github.com/lalyos/docker-upx/releases/download/v3.91/upx /bin/upx
 RUN ["/bin/chmx", "/bin/upx"]
 
 VOLUME /data
